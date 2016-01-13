@@ -214,6 +214,10 @@
     width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
+.footer-icons {
+    float: right;
+}
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
@@ -230,6 +234,11 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
+
+    .footer-icons {
+        margin-top: 40px;
+        float: none;
+    }
 }
 
 @include media-query($on-palm) {
@@ -237,6 +246,11 @@
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-icons {
+        margin-top: 40px;
+        float: none;
     }
 }
 
