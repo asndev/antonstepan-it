@@ -1,0 +1,14 @@
+<div style="float: right;">
+
+{% if site.footer.social.email %}
+<a href="mailto:{{ site.footer.social.email }}" target="_blank"><i class="svg-icon email"></i></a>
+{% endif %}
+{% if site.footer.social.facebook %}<a href="https://www.facebook.com/{{ site.footer.social.facebook }}" target="_blank"><i class="svg-icon facebook"></i></a>{% endif %}
+{% if site.footer.social.github %}<a href="https://github.com/{{ site.footer.social.github }}" target="_blank"><i class="svg-icon github"></i></a>{% endif %}
+{% if site.footer.social.instagram %}<a href="https://instagram.com/{{ site.footer.social.instagram }}" target="_blank"><i class="svg-icon instagram"></i></a>{% endif %}
+{% if site.footer.social.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer.social.linkedin }}" target="_blank"><i class="svg-icon linkedin"></i></a>{% endif %}
+{% if site.footer.social.rss %}<a href="{{ site.baseurl }}/feed.xml target="_blank""><i class="svg-icon rss"></i></a>{% endif %}
+{% if site.footer.social.twitter %}<a href="https://www.twitter.com/{{ site.footer.social.twitter }} target="_blank""><i class="svg-icon twitter"></i></a>{% endif %}
+{% if site.footer.social.googleplus %}<a href="https://plus.google.com/{{ site.footer.social.googleplus }}" target="_blank"><i class="svg-icon googleplus"></i></a>{% endif %}
+
+</div>

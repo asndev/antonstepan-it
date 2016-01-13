@@ -1,0 +1,21 @@
+<header class="hero full-width">
+    <div class="header-nav">
+        <div class="wrapper">
+            <nav class="">
+            <div class="row">
+                <div class="logo text-center">
+                    antonstepan
+                </div>
+            </div>
+            <div class="row text-center">
+                <a href="{{ site.baseurl }}/">Home</a>
+                {% for my_page in site.pages %}
+                  {% if my_page.title %}
+                  <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                  {% endif %}
+                {% endfor %}
+            </div>
+            </nav>
+        </div>
+    </div>
+</header>

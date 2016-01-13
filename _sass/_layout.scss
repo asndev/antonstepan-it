@@ -1,4 +1,71 @@
 /**
+ * Global Goblin
+ */
+.full-width {
+    margin: 0 auto;
+}
+
+.white {
+    background-color: #fff
+}
+
+.gray {
+    background-color: #F9F9F9;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.hero {
+    height: 80vh;
+    width: 100%;
+    background: url(../images/nyc-hero.png) no-repeat top center !important;
+    background-size: cover !important;
+    overflow: hidden;
+    padding: 120px 0 0;
+    position: relative;
+    background: #16222A;
+    background: -webkit-linear-gradient(to left, #16222A , #3A6073);
+    background: linear-gradient(to left, #16222A , #3A6073);
+}
+
+.header-nav {
+    top: 0;
+    z-index: 42;
+    background: transparent;
+    width: 100%;
+    margin: 0 auto;
+    padding: 42px 0;
+    position: absolute;
+
+    a {
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 18px;
+        color: #FFF !important;
+        letter-spacing: 0.5px;
+    }
+
+    a:hover {
+        padding-bottom: 5px;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 4px solid #DE5554 !important;
+    }
+
+}
+
+/**
+ * Intro
+ */
+.intro {
+    min-height: 886px;
+}
+
+
+/**
  * Site header
  */
 .site-header {
@@ -98,7 +165,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    background-color: $footer-color;
     padding: $spacing-unit 0;
 }
 
@@ -115,6 +182,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
+    padding-top: 30px;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
@@ -141,6 +209,11 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
+.footer-col-50 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
@@ -149,6 +222,11 @@
     }
 
     .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-50 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
