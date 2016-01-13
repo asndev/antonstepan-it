@@ -5,7 +5,7 @@ $(window).scroll(function() {
   var navSticky = 'nav-sticky';
 
   if ($(this).scrollTop() > header) {
-    navigation.addClass(navSticky);
+    navigation.addClass(navSticky).fadeIn();
   } else {
     navigation.removeClass(navSticky);
   }
