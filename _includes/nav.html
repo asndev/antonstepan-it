@@ -1,0 +1,19 @@
+<div class="header-nav">
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="row">
+                <span>
+                    <a class="brand">antonstepan</a>
+                </span>
+                <div class="menu">
+                    <a href="{{ site.baseurl }}/">Home</a>
+                    {% for my_page in site.pages %}
+                      {% if my_page.title %}
+                      <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                      {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

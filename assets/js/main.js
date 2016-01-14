@@ -1,5 +1,5 @@
 var headerHeight = $('header').height();
-var $navigation = $('nav');
+var $navigation = $('.header-nav');
 var navSticky = 'nav-sticky';
 var cssNames = 'nav-sticky transition';
 
