@@ -33,6 +33,7 @@
 }
 
 .hello {
+    padding-top: 20px;
     float: right;
     a, a:hover {
         text-decoration: none;
@@ -48,14 +49,43 @@
     padding: 120px 0 0;
     position: relative;
     background: #16222A;
-    background: -webkit-linear-gradient(to left, #16222A , #3A6073);
-    background: linear-gradient(to left, #16222A , #3A6073);
+
+    .caption {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+        h1 {
+            font-size: 5vh;
+            color: #fff;
+            margin-bottom: 0px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 3.5vh;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 10%;
+        }
+
+    }
 }
 
 .u-red {
     text-decoration: none;
-    border-bottom: 2px solid #DE5554 !important;
+    border-bottom: 2px solid $accent-color !important;
     padding-bottom: 2px;
+}
+
+.u-red-b {
+    text-decoration: none;
+    border-bottom: 4px solid $accent-color !important;
+    padding-bottom: 3px;
 }
 
 .nav-sticky {
@@ -122,7 +152,7 @@
         padding-bottom: 5px;
         color: #fff;
         text-decoration: none;
-        border-bottom: 4px solid #DE5554 !important;
+        border-bottom: 4px solid $accent-color !important;
     }
 
     .brand {
@@ -145,24 +175,66 @@
 /**
  * Intro
  */
-.intro, .portfolio, .contact {
-    min-height: 50vh;
-
+.intro, .portfolio, .contact, .services {
     a:hover {
         text-decoration: none;
+    }
+
+    padding-bottom: 30px;
+}
+
+.intro {
+    min-height: 30vh;
+}
+
+.portfolio, .contact, .services {
+    min-height: 40vh;
+}
+
+.what {
+
+    h2 {
+        margin-bottom: 0px;
+    }
+    h4 {
+        color: $grey-color-light;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .portfolio {
     .row {
-        height: 200px;
+        height: 380px;
         margin-bottom: 30px;
+
+        a {
+            color: $brand-color;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
     }
 
     img {
-        background-color: gray;
         width: 100%;
-        height: 200px;
+        height: 150px;
+    }
+
+    .tools {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: $grey-color;
+        margin-bottom: 0px;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
@@ -285,7 +357,7 @@
 .footer-col-wrapper {
     font-size: 15px;
     padding-top: 30px;
-    color: $grey-color;
+    color: $grey-color-light;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -433,4 +505,12 @@
             font-size: 18px;
         }
     }
+}
+
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: $accent-color;
 }
