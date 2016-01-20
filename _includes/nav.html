@@ -3,12 +3,14 @@
         <nav class="nav">
             <div class="row">
                 <span>
-                    <a href="{{ site.baseurl }}/" class="brand">antonstepan</a>
+                    <a href="{{ site.baseurl }}/" class="brand">asn digitalservices</a>
                 </span>
                 <div class="menu">
                     {% for my_page in site.pages %}
                       {% if my_page.title %}
+                      {% if my_page.title != 'Impressum' %}
                       <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                      {% endif %}
                       {% endif %}
                     {% endfor %}
                 </div>
