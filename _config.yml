@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Als Full Service Dienstleister bieten wir Ihnen Unterstützung bei jeglichen Schritten Ihrer Software Projekte.
 
 baseurl: "" # the subpath of your site, e.g. /antonstepan-it
-url: "http://antonstepan.it" # the base hostname & protocol for your site
+url: "http://antonstepan.de" # the base hostname & protocol for your site
 
 
 # Footer links
