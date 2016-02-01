@@ -8,7 +8,7 @@ permalink: /impressum/
 
   <h1 class="page-heading">Betreiber und Kontakt, Angaben gem. § 5 TMG</h1>
 
-  <p>antonstepan.de</p>
+  <p>asn digital services</p>
   <p>Anton Stepan<br/>
   Neunlindenst. 38<br/>
   79106 Freiburg<br/>
