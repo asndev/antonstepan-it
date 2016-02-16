@@ -52,7 +52,7 @@
 .hero {
     height: 80vh;
     width: 100%;
-    background: url(../images/nyc-hero.png) no-repeat top center !important;
+    background: url(../images/hero2.jpg) no-repeat top center !important;
     background-size: cover !important;
     overflow: hidden;
     padding: 120px 0 0;
@@ -78,17 +78,20 @@
         text-align: center;
         h1 {
             font-size: 75px;
-            letter-spacing: -4.5px;
-            line-height: 70px;
+            letter-spacing: -5.5px;
+            line-height: 80px;
             color: #fff;
+            text-shadow: 0 1px 18px #666;
             margin-bottom: 0px;
             font-weight: 700;
         }
 
         h2 {
-            font-size: 3.5vh;
+            font-size: 3.9vh;
             color: #fff;
+            letter-spacing: 1px;
             font-weight: 500;
+            text-shadow: 0 1px 18px #666;
             margin-bottom: 10%;
         }
 
@@ -197,7 +200,7 @@
     }
 
     .brand {
-        color: $brand-color;
+        color: white;
     }
 
     .menu {
