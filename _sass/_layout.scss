@@ -52,7 +52,7 @@
 .hero {
     height: 80vh;
     width: 100%;
-    background: url(../images/hero2.jpg) no-repeat top center !important;
+    background: url(../images/hero2.png) no-repeat top center !important;
     background-size: cover !important;
     overflow: hidden;
     padding: 120px 0 0;
@@ -108,7 +108,9 @@
             }
 
             h2 {
-                font-size: 22px;
+                font-size: 20px;
+                letter-spacing: -1px;
+                font-weight: 700;
             }
         }
     }
@@ -241,6 +243,14 @@
 
 .portfolio, .contact, .services {
     min-height: 40vh;
+}
+
+.intro-text {
+    font-size: 20px;
+    line-height: 35px;
+    word-wrap: break-word;
+    color: #333333;
+    font-family: 'Noticia Text';
 }
 
 .what {
