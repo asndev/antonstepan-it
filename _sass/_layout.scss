@@ -30,6 +30,7 @@
     margin-top: 40px;
     margin-bottom: 55px;
     font-size: 2.3rem;
+    font-weight: 100;
 }
 
 .hello {
@@ -50,14 +51,12 @@
 }
 
 .hero {
-    height: 80vh;
+    height: 73vh;
     width: 100%;
-    background: url(../images/hero2.png) no-repeat top center !important;
-    background-size: cover !important;
     overflow: hidden;
     padding: 120px 0 0;
     position: relative;
-    background: #16222A;
+    background: #FFF;
 
     .caption {
         width: 100%;
@@ -78,20 +77,16 @@
         text-align: center;
         h1 {
             font-size: 75px;
-            letter-spacing: -5.5px;
             line-height: 80px;
-            color: #fff;
-            text-shadow: 0 1px 18px #666;
+            color: #666;
             margin-bottom: 0px;
-            font-weight: 700;
+            font-weight: 100;
         }
 
         h2 {
             font-size: 3.9vh;
-            color: #fff;
-            letter-spacing: 2px;
-            font-weight: 500;
-            text-shadow: 0 1px 18px #666;
+            color: #A0A0A0;
+            font-weight: 100;
             margin-bottom: 10%;
         }
 
@@ -103,15 +98,12 @@
         .caption {
             h1 {
                 font-size: 42px;
-                letter-spacing: -3px;
-                font-weight: 800;
+                font-weight: 100;
                 line-height: 42px;
             }
 
             h2 {
                 font-size: 20px;
-                letter-spacing: -1px;
-                font-weight: 700;
             }
         }
     }
@@ -119,7 +111,7 @@
 
 .u-red {
     text-decoration: none;
-    border-bottom: 2px solid $accent-color !important;
+    border-bottom: 1px solid $accent-color !important;
     padding-bottom: 2px;
 }
 
@@ -191,19 +183,20 @@
         margin-right: 15px;
         margin-left: 15px;
         font-size: 18px;
-        color: #FFF;
+        font-weight: 100;
+        color: $brand-color-light;
         letter-spacing: 0.5px;
     }
 
     a:hover {
         padding-bottom: 5px;
-        color: #fff;
+        color: $brand-color;
         text-decoration: none;
         border-bottom: 4px solid $accent-color !important;
     }
 
     .brand {
-        color: white;
+        color: $brand-color-light;
     }
 
     .menu {
@@ -239,7 +232,12 @@
 }
 
 .intro {
-    min-height: 30vh;
+    min-height: 70vh;
+}
+
+.macbook {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .portfolio, .contact, .services {
@@ -247,11 +245,16 @@
 }
 
 .intro-text {
-    font-size: 20px;
-    line-height: 35px;
-    word-wrap: break-word;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
     color: #333333;
-    font-family: 'Noticia Text';
+}
+
+.categories {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    list-style-type: disc;
 }
 
 .what {
